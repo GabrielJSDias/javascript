@@ -1,0 +1,25 @@
+body{
+    background: #4555b1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+header{
+    color: white;
+}
+
+section{
+    background-color: #f0f8ff;
+    box-shadow: 3px 3px 3px #38427e;
+    border-radius: 10px;
+    color: #364286;
+    padding: 15px;
+    width: 500px;
+    margin: auto
+}
+
+footer{
+    color: white;
+    font-style: italic;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: rgb(106, 120, 202);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        }
+    </style>
+    <title>EX008</title>
+</head>
+<body>
+    <h1>Vamos fazer um novo teste ?</h1>
+    <h2>Hora de fazer alguns testes novos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab quam, similique rem in omnis reiciendis! Dolor eaque modi maxime incidunt voluptas unde id laborum laboriosam in ipsam! Repudiandae, iste!</p>
+    <input type="number" placeholder="Digite um valor..." id="valor" onchange="teste()">
+    <div id="res">Olhe aqui...</div>
+
+    <script>
+        var valor = Number(document.getElementById('valor').value)
+        var res = document.getElementById('res').innerText
+
+        function teste (){
+            var corpo = window.document.getElementsByTagName('body')[0]
+
+            switch(valor){
+                case valor == '1': corpo.style.backgroundColor = 'yellow'
+                    break 
+                case valor == '2': corpo.style.backgroundColor = 'red'
+                    break
+                default:
+                    corpo.style.backgroundColor = 'green'
+            }
+        }
+        
+    </script>
+</body>
+</html>

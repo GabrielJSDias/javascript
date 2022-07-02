@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <label for="ano">Ano de nascimento</label>
+        <input type="number" id="ano" value="2000" name="ano"><br>
+        <p>
+            <label for="">Sexo:</label>
+            <input type="radio" name="sex" id="masc">
+            <label>Masculino</label>
+            <input type="radio" name="sex" id="fem">
+            <label>Feminino</label><br>
+        </p>
+        <input type="button" value="Verificar">
+        <div id="res">Resultado</div>
+    </section>
+    <footer>
+        <p>&copy; Gabriel Santos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

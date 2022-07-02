@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: rgb(106, 120, 202);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        }
+    </style>
+    <title>EX007</title>
+</head>
+<body id="body">
+    <h1>Somando Valores</h1>
+    <p>Vamos testar nosso conhecimento ?</p><br>
+    <input type="number" value="0" name="valor1" id="valor1" onchange="somar()">+
+    <input type="number" value="0" name="valor2" id="valor2" onchange="somar()">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <div id="res2"> </div>
+    
+    <script>
+        function somar(){
+            var n1 = Number(document.getElementById('valor1').value)
+            var n2 = Number(document.getElementById('valor2').value)
+            var res = document.querySelector('div#res')
+            var res2 = document.querySelector('div#res2')
+            res.innerText = `A soma entre ${n1} e ${n2} é: ${n1+n2}`
+            if (n1+n2 >= 10){res2.innerText=`O valor está muito alto!`} else {
+                res2.innerText = ''
+            }
+            console.log('oi')
+        }
+    </script>
+    
+</body>
+</html>

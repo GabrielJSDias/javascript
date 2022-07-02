@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Aula 10 - EX006</title>
+    <style>
+        body{background-color: rgb(106, 120, 202);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        padding-top: 20px;
+        }
+        div#area{
+            font: normal 20pt arial;
+            background: rgb(241, 227, 30);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        div#area:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Interaja...</div>
+
+    <script>
+        var interacao = document.querySelector('div#area')
+        interacao.addEventListener('click', clicar)
+        interacao.addEventListener('mouseenter', entrar)
+        interacao.addEventListener('mouseout', sair)
+
+        function clicar(){
+            interacao.innerText = 'Clicou'
+            interacao.style.background = 'rgb(30, 199, 241)'
+        }
+
+        function entrar(){
+            interacao.style.color = 'red' 
+            interacao.style.transition = '0.8s'
+        }
+
+        function sair(){
+            interacao.style.transition = '0s'
+            interacao.style.color = 'white'
+            interacao.style.background = 'green'
+            interacao.innerHTML = 'Interaja...'
+        }
+
+        
+    </script>
+</body>
+</html>

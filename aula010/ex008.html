@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{background-color: rgb(106, 120, 202);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        }
+    </style>
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="v1">Velocidade do carro:</label>
+    <input type="number" name="v1" id="v1"> Km/h <br>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <h2 id="res">Velocidade alta!</h2>
+
+
+
+    <script>
+        function calcular(){
+            var velocidade = Number(document.querySelector('input#v1').value)
+            if (velocidade > 70){
+                document.getElementById('res').innerText = 'PARE'
+            } else {
+                document.getElementById('res').innerText = 'Siga viagem!'
+            }
+        }
+    </script>
+</body>
+</html>
